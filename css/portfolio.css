@@ -1,0 +1,422 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 인디케이터 */
+    /* 풀페이지의 인디케이터 색 변경 */
+    #fp-nav ul li a span{
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    /* 툴팁(풀페이지 인디케이터 호버시 나오는 글자) 꾸미기 */
+    #fp-nav ul li .fp-tooltip{
+        color: pink;
+        background: rgba(0,0,0,0.6);
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+/* 인디케이터 끝 */
+
+
+/* ✔ Home */
+    .home{
+        width: 100%; height: 100%;
+        background-image: url("../img/bg_home.jpg");
+        position: relative;
+    }
+    /* 네비 */
+        .home .header .logo{
+            /* background-color: yellow; */
+            position: absolute;
+            float: left;
+            left: 80px;
+            top: 10px;
+        }
+        .home .header .nav-wrap .logo img{
+            width: 7.5vw; height: 7.5vw;
+        }
+        .home .nav{
+            width: 80%; height: 100px;
+            position: absolute;
+            top: 0;
+            left: 15%;
+        }
+        .home .nav ul{
+            max-width: 1600px;
+            margin: 0 auto;
+            height: 150px;
+            overflow: hidden;
+        }
+        .home .nav ul li{
+            float: left;
+            width: 25%;
+            text-align: center;
+            line-height: 150px;
+            height: 150px;
+        }
+        .home .nav ul li img{
+            width: 25%;
+            height: 5vw;
+        }
+        .home .nav ul li a{
+            display: inline-block;
+            width: 100%;
+            font-size: 1.5vw;
+            color: #fff;
+            font-family: 'SEBANG_Gothic_Bold';
+        }
+        .home .nav ul li:hover a{
+            font-family: 'SEBANG_Gothic_Bold';
+            color: #ff9999;
+            font-size: 1.75vw;
+            text-decoration: overline;
+            transition: 0.2s;
+        }
+    /* 네비 끝 */
+    .home h2{
+        position: absolute;
+        font-family: 'SEBANG_Gothic_Bold';
+        left: 50%;
+        top: 45%;
+        color: #fff;
+        font-size: 5vw;
+        font-style: italic;
+    }
+    .home p{
+        position: absolute;
+        font-family: 'SEBANG_Gothic_Bold';
+        left: 50%;
+        top: 55%;
+        color: #fff;
+        font-size: 1.5vw;
+    }
+    .home span{
+        font-family: 'SEBANG_Gothic_Bold';
+        color: #fff;
+        font-size: 1.5vw;
+    }
+    .home p:hover span{
+        font-family: 'SEBANG_Gothic_Bold';
+        color: #ffbfbf;
+        transition: 0.3s;
+    }
+/* ✔ Home 끝 */
+
+
+/* ✔ About */
+    .about{
+        background-color: #fff;
+        /* position: relative; */
+    }
+    .about h2{
+        margin-left: 155px;
+        color: #3e3e3e;
+        font-size: 2.5vw;
+    }
+    .grid{
+        display: grid;
+        max-width: 1600px;
+        margin: 0 auto;
+        grid-gap: 20px;
+        grid-template-columns: 600px 1000px;
+        grid-template-rows: 800px;
+    }
+    .grid .left,
+    .grid .right{
+        /* background-color: lightblue; */
+        background-color: #fff;
+    }
+    .about .left img{
+        width: 200px; height: 200px;
+        border-radius: 50%;
+        margin-left: 200px;
+        margin-top: 80px;
+    }
+    .about .left h3{
+        font-family: 'SEBANG_Gothic_Bold';
+        color: #ff9999;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.75vw;
+    }
+    .about .left p{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .about .left .btn{
+        width: 110px; height: 25px;
+        font-size: 13px;
+        border: 1px solid #ccc;
+        line-height: 25px;
+        text-align: center;
+        margin: 10px auto;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .about .left .btn:hover{
+        color: #fff;
+        background-color: #ff9999;
+        border: 1px solid #fff;
+        transition: 0.3s;
+    }
+    .about .right h3{
+        font-family: 'SEBANG_Gothic_Bold';
+        text-align: center;
+    }
+/* ✔ About 끝 */
+
+/* modal */
+    .window{
+        display: none;
+        position: fixed;
+        width: 100%; height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        left: 0;
+        top: 0;
+    }
+    .window-content{
+        display: none;
+        position: fixed;
+        width: 70%; height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: scroll;
+    }
+    .window-content img{
+        width: 100%;
+    }
+/* modal 끝 */
+
+
+/* ✔ works */
+    .work{
+        background-image: url("../img/bg_works.jpg");
+        /* position: relative; */
+    }
+    .work h2{
+        font-size: 3vw;
+        top: 1.75vw;
+        /* top: 35px; */
+        left: 2.5vw;
+        /* left: 50px; */
+        color: #fff;
+        position: absolute;
+    }
+    .work h2::before{
+        content: "";
+        background-color: #fff;
+        width: 100px; height: 6px;
+        position: absolute;
+        display: inline-block;
+        opacity: 50%;
+    }
+
+    /* 컨테이너 - 테두리 */
+    .work .container{
+        position: absolute;
+        border: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        border-radius: 30px;
+        width: 90%; height: 80%;
+        margin: 0px auto;
+        /* margin-top: 75px; */
+        margin-top: 3.75vw;
+        position: relative;
+    }
+
+    /* 탭메뉴 */
+    .work .tabmenu > *{display: none;}
+    .work .tabmenu{
+        position: absolute;
+        /* left: 50px; */
+        left: 2.5vw;
+    }
+    .work .tabmenu label{
+        display: inline-block;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-right: 10px;
+        padding: 2px 8px;
+        margin-top: 60px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .work .tabmenu #tab1:checked ~ .tab1-content{display: block;}
+    .work .tabmenu #tab2:checked ~ .tab2-content{display: block;}
+    .work .tabmenu #tab3:checked ~ .tab3-content{display: block;}
+    .work .tabmenu #tab4:checked ~ .tab4-content{display: block;}
+    .work .tabmenu #tab5:checked ~ .tab5-content{display: block;}
+    .work .tabmenu label:hover,
+    .work .tabmenu label.on{
+        background-color: #fff;
+        color: #ff9999;
+    }
+    .work .tab1-content,
+    .work .tab2-content,
+    .work .tab3-content,
+    .work .tab4-content{
+        position: relative;
+    }
+
+    /* 스와이퍼 */
+    .work .swiper{
+        /* background-color: #aaa; */
+        width: 1500px; height: 500px;
+        top: 90px;
+        /* left: 45px; */
+        /* width: 75vw; height: 20vw; */
+        margin: 0 auto;
+        /* top: 6vw; */
+        left: 2.25vw;
+        position: relative;
+    }
+    .work .swiper .swiper-wrapper{
+        /* background-color: yellow; */
+        /* width: 1300px; height: 400px; */
+        /* left: 45px; */
+        width: 65vw; height: 20vw;
+        left: 2.25vw;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .work .swiper .swiper-slide{
+        /* background-color: green; */
+        width: 400px; height: 400px;
+    }
+    .work .swiper img{
+        width: 400px; height: 300px;
+        cursor: pointer;
+        left: 50%;
+    }
+    .work .swiper h4{
+        font-size: 1.2vw;
+        color: #3e3e3e;
+    }
+    .work .swiper p{
+        font-size: 1vw;
+        color: #3e3e3e;
+    }
+    .swiper-pagination-bullet-active{
+        background: #fff;
+    }
+/* ✔ works 끝 */
+
+
+/* ✔ contact */
+    .contact{
+        background-image: url("../img/bg_contact.jpg");
+    }
+    .contact h2{
+        text-align: center;
+        top: 100px;
+        font-size: 3vw;
+        color: #3e3e3e;
+    }
+    .contact h2::before{
+        content: "";
+        background-color: #3e3e3e;
+        width: 233px; height: 6px;
+        position: absolute;
+        display: inline-block;
+        opacity: 50%;
+    }
+    .contact .phone p{
+        text-align: center;
+        color: #3e3e3e;
+        font-size: 1vw;
+    }
+    .contact .e-mail p{
+        text-align: center;
+        color: #3e3e3e;
+        font-size: 1vw;
+    }
+    .contact .footer .p{
+        color: #3e3e3e;
+    }
+/* ✔ contact 끝 */
+
+/* 햄버거바 (모바일 전용) */
+    /* .hamburger{
+        width: 30px; height: 30px;
+        cursor: pointer;
+        right: 20px; top: 20px;
+        z-index: 99;
+        display: none;
+        position: fixed;
+    }
+    .hamburger .line{
+        width: 20px; height: 4px;
+        border-radius: 10px;
+        margin: 5px;
+        background-color: #fff;
+    } */
+/* 햄버거바 (모바일 전용) 끝 */
+
+
+/* 반응형 - 태블릿 */
+    @media screen and (min-width: 641px) and (max-width: 1200px){
+        
+    }
+/* 반응형 - 태블릿 끝 */
+
+
+/* ✔ 반응형 - 모바일 */
+    @media screen and (max-width: 640px) {
+        /* home */
+        .home nav{
+            display: none;
+        }
+        .home h2{
+            font-size: 6.5vw;
+        }
+        /* about */
+        /* work */
+        .work h2{
+            font-size: 6.5vw;
+            top: 20px;
+        }
+        .work h2::before{
+            width: 120px;
+        }
+        .work .container{
+            width: 90%; height: 85%;
+            top: 13px;
+        }
+        .work .tabmenu label{
+            font-size: 3.8vw;
+            text-align: center;
+            width: 330px;
+            display: block;
+            margin-top: 0;
+            margin-bottom: 15px;
+            transform: translate(11%, 80%);
+        }
+        .work .swiper{
+            width: 400px; height: 400px;
+        }
+        .work .swiper img{
+            width: 200px; height: 150px;
+        }
+        .work .swiper h4{
+            font-size: 15px;
+        }
+        /* 햄버거바 */
+        /* .hamburger{
+            display: block;
+        } */
+
+    }
+/* ✔ 반응형 끝 */
