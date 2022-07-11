@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 사이트 기본 설정 -->
+    <link rel="shortcut icon" href="">
+    <title>Portfolio</title>
+    <meta name="robots" content="All">
+    <meta name="Yeti" content="index, follow">
+    <meta name="Yeti" content="All">
+    <meta name="googlebot" content="All">
+    <meta name="googlebot" content="index, follow">
+    
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- css 링크 -->
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- js 링크 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/portfolio.js"></script>
+</head>
+<body>
+
+    <!-- 풀페이지 -->
+    <div class="fullpage">
+
+        <!-- ✔ Home -->
+        <div id="particles-js"></div>
+        <div class="section home fp-auto-height-responsive">
+            <!-- 네비 -->
+            <div class="header">
+                <div class="nav-wrap">
+                    <div class="logo">
+                        <a href="portfolio.html">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#works">Works</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <ul>
+                    <li><a href="portfolio.html"><img src="img/logo.png" alt="logo"></a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> -->
+            </div> <!-- 네비 끝 -->
+
+            <!-- <h2>Portfolio</h2> -->
+            <!-- <p>웹을 <span>정하</span>다</p> -->
+            <div class="circle"></div>
+        </div> <!-- ✔ Home 끝 -->
+
+
+
+        <!-- ✔ About -->
+        <div class="section about fp-auto-height-responsive">
+            <h2>About Me</h2>
+
+            <div class="grid">
+                <div class="left">
+                    <img src="http://via.placeholder.com/200" alt="portrait">
+                    <h3>HELLO!</h3>
+                    <p>안녕하세요</p>
+                    <p></p>
+                    <div class="btn">more</div>
+                </div>
+                <div class="right">
+                    <h3>Education</h3>
+                    <p></p>
+                </div>
+            </div>
+        </div> <!-- ✔ About 끝 -->
+
+
+
+        <!-- modal -->
+        <div class="window"></div>
+        <div class="window-content">
+            <h3>제목</h3>
+            <img src="http://via.placeholder.com/1920x3000" alt="popup">
+        </div>
+
+
+
+        <!-- ✔ works -->
+        <div class="section work fp-auto-height-responsive">
+            <h2>Works</h2>
+            <div class="container">
+                <div class="tabmenu">
+                    <input type="radio" name="tab" id="tab1" checked>
+                    <input type="radio" name="tab" id="tab2">
+                    <input type="radio" name="tab" id="tab3">
+                    <input type="radio" name="tab" id="tab4">
+    
+                    <label for="tab1" class="a">All</label>
+                    <label for="tab2" class="b">Web</label>
+                    <label for="tab3" class="c">Design</label>
+                    <label for="tab4" class="d">etc.</label>
+    
+                    <div class="tab1-content">
+                        <div class="swiper all">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>web</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/dae" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>web</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/i12" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>web</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/456" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>design</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/fff" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>design</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/ab7" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>etc.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/cd6" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>etc.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div> <!-- tab1-content 끝 -->
+                    
+                    <div class="tab2-content">
+                        <div class="swiper web">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>web</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/dae" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>web</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/i12" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>web</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/456" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>web</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div> <!-- tab2-content 끝 -->
+
+                    <div class="tab3-content">
+                        <div class="swiper design">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/456" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>design</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/fff" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>design</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/456" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>design</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/456" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>design</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>  <!-- tab3-content 끝 -->
+
+                    <div class="tab4-content">
+                        <div class="swiper etc">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/ab7" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>etc.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/cd6" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>etc.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/456" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>etc.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="http://via.placeholder.com/400x300/456" alt="400x300">
+                                    <h4>제목</h4>
+                                    <p>etc.</p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>  <!-- tab4-content 끝 -->
+            </div>
+            </div> <!-- 탭메뉴 끝 -->
+        </div> <!-- ✔ works 끝 -->
+
+
+
+        <!-- ✔ contact -->
+        <div class="section contact fp-auto-height-responsive">
+            <h2>Contact</h2>
+            <div class="phone">
+                <img src="" alt="phone">
+                <p>+82)1234-5678</p>
+            </div>
+            <div class="e-mail">
+                <img src="" alt="e-mail">
+                <p>miffy793@naver.com</p>
+                <p></p>
+            </div>
+            <div class="footer">
+                <!-- <p>본 사이트는 포트폴리오용으로 제작되었습니다.</p> -->
+                <!-- <p>©Copyright reserved.</p> -->
+            </div>
+        </div> <!-- ✔ contact 끝 -->
+
+
+
+        <!-- 팝업창 & 어두워지는 배경 -->
+        <div class="window"></div>
+        <div class="window-content">
+            <img src="http://via.placeholder.com/1920/3000" alt="1920x3000">
+        </div>
+        
+    </div> <!-- 풀페이지 끝 -->
+</body>
+</html>
